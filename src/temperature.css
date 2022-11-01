@@ -1,0 +1,555 @@
+.heading{
+    text-align: center;
+    background: linear-gradient(to bottom,#080808 50%,#023823 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .6s;
+    
+}
+.heading:hover{
+    transform: skewX(10deg) scale(1.1);
+    /* transform: skewY(10deg); */
+    /* box-shadow: 1rem 2rem 4rem black; */
+}
+.body{
+    background-image: linear-gradient(to bottom,#f1ecec ,#454948 );
+    height: 100vh;
+    
+}
+.celciustofahren{
+    display: flex;
+    flex-direction: column;
+}
+.celc_fahr{
+    height: 200px;
+    width: 300px;
+    background: linear-gradient(to bottom,#080808 10%,#023823 90%);
+    color: whitesmoke;
+    padding-top: 47px;
+    padding-left: 25px;
+    margin-top: 6px;
+    margin-left: 5px;
+    box-shadow: 5px 5px 5px  rgb(9, 9, 12);
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+.one{
+    padding-left: 15px;
+    margin-top: 5px;
+}
+.celc_fahr:hover{
+    box-shadow: 10px 10px 10px black;
+    color: white;
+    transform: translateZ(1rem) translateY(-.5rem);
+    /* transform: scale(1.001); */
+}
+#celc1{
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 15vw;
+    height: 25px;
+    border-radius: 8px;
+    outline: 2px solid transparent;
+}
+#celc1:hover{
+    box-shadow: 2px 2px 2px black;
+    outline: 2px solid darkblue;
+    
+}
+#celc1:focus{
+    outline: 2px solid transparent;
+    border-bottom: 4px solid green;
+}
+#celc:focus:invalid{
+    outline: 2px solid transparent;
+    border-bottom: 2px solid red;
+}
+.celfah{
+    margin-top: 18px;
+    margin-left: 40px;
+    width: 10vw;
+    height: 30px;
+    /* background-color: #3BC9DA; */
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: all .2s;
+}
+.celfah:hover{
+    transform: translateX(.2rem);
+}
+#celtofah{
+    padding: auto ;
+    color: black;
+    background-color: whitesmoke;
+    width: 250px;
+    border-radius: 5px;
+    /* display: inline-block; */
+    margin-left: 10px;
+    animation-name: celtofah;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+@keyframes celtofah{
+    from{
+        transform: scale(.2);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.celc-kelv{
+    height: 200px;
+    width: 300px;
+    padding-top: 47px;
+    padding-left: 25px;
+    background: linear-gradient(to bottom,#080808 10%,#023823 90%);
+    color: whitesmoke;
+    margin-top: 6px;
+    margin-left: 5px;
+    box-shadow: 5px 5px 5px rgb(15, 13, 15);
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+.two{
+    padding-left: 15px;
+    margin-top: 5px;
+    /* color: black; */
+}
+.celc-kelv:hover{
+    box-shadow: 10px 10px 10px black;
+    color: white;
+    transform: translateZ(1rem) translateY(-.5rem);
+   
+}
+
+.celciustokelvin{
+    display: flex;
+    flex-direction: column;
+}
+.celkel{
+    width: 10vw;
+    height: 30px;
+    background-color:white;
+    color: black;
+    margin-top: 15px;
+    margin-left: 40px;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: all .2s;
+}
+.celkel:hover{
+    transform: translateX(.2rem);
+}
+#celc2{
+    width: 15vw;
+    margin-top: 15px;
+    /* padding-top: 15px; */
+    margin-left: 15px;
+    height: 25px;
+    border-radius: 8px;
+    outline: 2px solid transparent;
+}
+#celc2:hover{
+    box-shadow: 2px 2px 2px black;
+    outline: 2px solid darkblue;
+    
+}
+#celc2:focus{
+    outline: 2px solid transparent;
+    border-bottom: 4px solid green;
+}
+#celc2:focus:invalid{
+    outline: 2px solid transparent;
+    border-bottom: 2px solid red;
+}
+#celtokel{
+    padding: auto ;
+    color: black;
+    background-color: whitesmoke;
+    width: 250px;
+    border-radius: 5px;
+    display: block;
+    margin-left: 10px;
+    animation-name: celtokel;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+@keyframes celtokel{
+    from{
+        transform: scale(.20);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.fahrentocelcius{
+    display: flex;
+    flex-direction: column;
+}
+.fahr-celc{
+    height: 200px;
+    width: 300px;
+    background: linear-gradient(to bottom,#080808 10%,#023823 90%);
+    color: whitesmoke;
+    padding-top: 47px;
+    padding-left: 25px;
+    margin-top: 6px;
+    margin-left: 25px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px; 
+    transition: all .2s ease-in-out; 
+}
+.fahr-celc:hover{
+    box-shadow: 10px 10px 10px black;
+    color: white;
+    transform: translateZ(1rem) translateY(-.5rem);
+}
+#fahr1{
+    width: 15vw;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 25px;
+    border-radius: 8px;
+    outline: 2px solid transparent;
+}
+#fahr1:hover{
+    outline: 2px solid blue;
+}
+#fahr1:focus{
+    outline: 2px solid transparent;
+    border-bottom: 4px solid green;
+}
+#fahr1:focus:invalid{
+    outline: 2px solid transparent;
+    border-bottom: 2px solid red;
+}
+.three{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.fahcel{
+    width: 10vw;
+    background-color: white;
+    color: black;
+    margin-top: 15px;
+    margin-left: 40px;
+    height: 30px;
+    border-radius: 100px;
+    border: 2px solid white ;
+    transition: all .2s;
+}
+.fahcel:hover{
+    transform: translateX(.2rem);
+}
+#fahtocel{
+    padding: auto auto;
+    color: black;
+    background-color: whitesmoke;
+    width: 250px;
+    border-radius: 5px;
+    /* display: inline-block; */
+    margin-left: 10px;
+    animation-name: fahtocel;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+@keyframes fahtocel{
+    from{
+        transform: scale(.20);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+}
+.fahrentokel{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 2px; */
+}
+.fahr-kel{
+    height: 200px;
+    width: 300px;
+    background: linear-gradient(to bottom,#080808 10%,#023823 90%);
+    color: whitesmoke;
+    padding-top: 47px;
+    padding-left: 25px;
+    margin-top: 6px;
+    margin-left: 5px;
+    box-shadow: 5px 5px 5px rgb(3, 3, 3);
+    border-radius: 10px;
+    transition: all .2s ease-in-out; 
+}
+.fahr-kel:hover{
+    box-shadow: 10px 10px 10px black;
+    color: white;
+    transform: translateZ(1rem) translateY(-.5rem);
+}
+#fahr2{
+    width: 15vw;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 25px;
+    border-radius: 8px;
+    outline: 2px solid transparent;
+}
+#fahr2:hover{
+    outline: 2px solid blue;
+}
+#fahr2:focus{
+    border-bottom: 4px solid green;
+    outline: 2px solid transparent;
+}
+#fahr2:focus:invalid{
+    border-bottom: 4px solid red;
+    outline: 2px solid transparent;
+}
+.four{
+    margin-left: 15px;
+}
+.fahkel{
+    width: 10vw;
+    height: 30px;
+    background-color: white;
+    color: black;
+    margin-top: 18px;
+    margin-left: 40px;
+    /* height: 25px; */
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: all .2s;
+}
+.fahkel:hover{
+    transform: translateX(.2rem);
+}
+#fahtokel{
+    padding: auto auto;
+    color: black;
+    background-color: whitesmoke;
+    width: 250px;
+    border-radius: 5px;
+    /* display: inline-block; */
+    margin-left: 10px;
+    animation-name: fahtokel;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+@keyframes fahtokel{
+    from{
+        transform: scale(.20);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.kelvintocelcius{
+    display: flex;
+    flex-direction: column;
+}
+.kel-cel{
+    height: 200px;
+    width: 300px;
+    background: linear-gradient(to bottom,#080808 10%,#023823 90%);
+    color: whitesmoke;
+    padding-top: 47px;
+    padding-left: 25px;
+    margin-top: 6px;
+    margin-left: 5px;  
+    box-shadow: 5px 5px 5px rgb(12, 13, 14);
+    border-radius: 10px;
+    transition: all .2s ease-in-out; 
+}
+.kel-cel:hover{
+    box-shadow: 10px 10px 10px black;
+    color: white;
+    transform: translateZ(1rem) translateY(-.5rem);
+}
+#kel1{
+    width: 15vw;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 25px;
+    border-radius: 8px;
+    outline: 2px solid transparent;
+}
+#kel1:hover{
+    outline: 2px solid blue;
+}
+#kel1:focus{
+    border-bottom: 4px solid green;
+    outline: 2px solid transparent;
+}
+#kel1:focus:invalid{
+    border-bottom: 4px solid red;
+    outline: 2px solid transparent;
+}
+
+.five{
+    margin-left: 15px;
+}
+.kelcel{
+    width: 10vw;
+    background-color: white;
+    color: black;
+    margin-top: 18px;
+    margin-left: 40px;
+    height: 30px;
+    border-radius: 100px;
+    border: 2px solid white;
+    transition: all .2s;
+}
+.kelcel:hover{
+    transform: translateX(.2rem);
+}
+#keltocel{
+    padding: auto auto;
+    color: black;
+    background-color: whitesmoke;
+    width: 250px;
+    border-radius: 5px;
+    /* display: inline-block; */
+    margin-left: 10px;
+    animation-name: keltocel;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+@keyframes keltocel{
+    from{
+        transform: scale(.20);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.kelvintofahren{
+    display: flex;
+    flex-direction: column;
+}
+.kel-fah{
+    height: 200px;
+    width: 300px;
+    background: linear-gradient(to bottom,#080808 10%,#023823 90%);
+    color: whitesmoke;
+    padding-top: 47px;
+    padding-left: 25px;
+    margin-top: 6px;
+    margin-left: 5px;
+    box-shadow: 5px 5px 5px rgb(5, 5, 5); 
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+.kel-fah:hover{
+    box-shadow: 10px 10px 10px black;
+    color: white;
+    transform: translateZ(1rem) translateY(-.5rem)
+}
+#kel2{
+    width: 15vw;
+    margin-top: 13px;
+    margin-left: 15px; 
+    height: 25px;
+    border-radius: 8px;
+    outline: 2px solid transparent;
+}
+#kel2:hover{
+    outline: 2px solid blue;
+}
+#kel2:focus{
+    border-bottom: 4px solid green;
+    outline: 2px solid transparent;
+}
+#kel2:focus:invalid{
+    border-bottom: 4px solid red;
+    outline: 2px solid transparent;
+}
+.six{
+    margin-left: 15px;
+}
+.kelfah{
+    width: 10vw;
+    background-color: white;
+    color: black;
+    margin-top: 18px;
+    margin-left: 45px;
+    height: 30px;
+    border-radius: 10rem;
+    border: 2px solid white;
+    transition: all .2s;
+}
+.kelfah:hover{
+    transform: translateX(.2rem);
+}
+#keltofah{
+    padding: auto auto;
+    color: black;
+    background-color: whitesmoke;
+    width: 250px;
+    border-radius: 5px;
+    /* display: inline-block; */
+    margin-left: 10px;
+    animation-name: keltofah;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+@keyframes keltofah{
+    from{
+        transform: scale(.20);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.part2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    margin-top: 15px;  
+
+}
+
+.body{
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-style: oblique;
+}
